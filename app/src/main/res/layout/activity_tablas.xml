@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d6eaf8"
+    tools:context="VentanasLMT.TablasActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="20dp"
+        app:cardBackgroundColor="#AEC6CF"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/texnorma"
+        app:layout_constraintTop_toTopOf="@+id/texnorma" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CardTable1"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:cardBackgroundColor="#bfd1d0"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/TablaUno"
+        app:layout_constraintEnd_toStartOf="@id/CardTable2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/TablaUno" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CardTable2"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="16dp"
+        app:cardBackgroundColor="#f4d7de"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/TablaDos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/CardTable1"
+        app:layout_constraintTop_toTopOf="@+id/TablaDos" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CardTable3"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:cardBackgroundColor="#f4ceb8"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/TablaTres"
+        app:layout_constraintEnd_toStartOf="@id/CardTable4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/TablaTres" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CardTable4"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="16dp"
+        app:cardBackgroundColor="#ebe1b9"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/TablaCuatro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/CardTable3"
+        app:layout_constraintTop_toTopOf="@+id/TablaCuatro" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CardTable5"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:cardBackgroundColor="#e2cbd9"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/TablaCinco"
+        app:layout_constraintEnd_toStartOf="@id/CardTable6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/TablaCinco" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CardTable6"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="16dp"
+        app:cardBackgroundColor="#a4d4dc"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/TablaSeis"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/CardTable5"
+        app:layout_constraintTop_toTopOf="@+id/TablaSeis" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CardTable7"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:cardBackgroundColor="#c2a2c2"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/TablaSiete"
+        app:layout_constraintEnd_toStartOf="@id/CardTable8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/TablaSiete" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CardTable8"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="16dp"
+        app:cardBackgroundColor="#f3f3ab"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/TablaOcho"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/CardTable7"
+        app:layout_constraintTop_toTopOf="@+id/TablaOcho" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CardTable9"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:cardBackgroundColor="#d7e5ec"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/TablaNueve"
+        app:layout_constraintEnd_toStartOf="@id/CardTable10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/TablaNueve" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CardTable10"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="16dp"
+        app:cardBackgroundColor="#e9a7b8"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/TablaDiez"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/CardTable9"
+        app:layout_constraintTop_toTopOf="@+id/TablaDiez" />
+
+    <TextView
+        android:id="@+id/texnorma"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="15dp"
+        android:elevation="16dp"
+        android:gravity="center"
+        android:text="Tablas de multiplicar"
+        android:textColor="@color/black"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/TablaUno"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="5dp"
+        android:background="@android:color/transparent"
+        android:text="Tabla del 1"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toStartOf="@id/TablaDos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/TablaDos"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="10dp"
+        android:background="@android:color/transparent"
+        android:text="Tabla del 2"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/TablaUno"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/TablaTres"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="5dp"
+        android:background="@android:color/transparent"
+        android:text="Tabla del 3"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toStartOf="@id/TablaCuatro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/TablaUno" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/TablaCuatro"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="10dp"
+        android:background="@android:color/transparent"
+        android:text="Tabla del 4"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/TablaTres"
+        app:layout_constraintTop_toTopOf="@id/TablaDos" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/TablaCinco"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="5dp"
+        android:background="@android:color/transparent"
+        android:text="Tabla del 5"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toStartOf="@id/TablaSeis"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/TablaTres" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/TablaSeis"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="10dp"
+        android:background="@android:color/transparent"
+        android:text="Tabla del 6"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/TablaCinco"
+        app:layout_constraintTop_toTopOf="@id/TablaCuatro" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/TablaSiete"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="5dp"
+        android:background="@android:color/transparent"
+        android:text="Tabla del 7"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toStartOf="@id/TablaOcho"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/TablaCinco" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/TablaOcho"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="10dp"
+        android:background="@android:color/transparent"
+        android:text="Tabla del 8"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/TablaSiete"
+        app:layout_constraintTop_toTopOf="@id/TablaSeis" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/TablaNueve"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="5dp"
+        android:background="@android:color/transparent"
+        android:text="Tabla del 9"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toStartOf="@id/TablaDiez"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/TablaSiete" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/TablaDiez"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="10dp"
+        android:background="@android:color/transparent"
+        android:text="Tabla del 10"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/TablaNueve"
+        app:layout_constraintTop_toTopOf="@id/TablaOcho" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

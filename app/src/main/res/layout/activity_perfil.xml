@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d7e5ec"
+    tools:context="VentanasLMT.PerfilActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:cardBackgroundColor="#a4d4dc "
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintTop_toTopOf="@+id/Nombretext"
+        app:layout_constraintBottom_toBottomOf="@+id/Nombretext"
+        app:layout_constraintEnd_toEndOf="@+id/Nombretext"
+        app:layout_constraintStart_toStartOf="@+id/Nombretext"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:cardBackgroundColor="#bfd1d0 "
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintTop_toTopOf="@+id/Nombre"
+        app:layout_constraintBottom_toBottomOf="@+id/Nombre"
+        app:layout_constraintEnd_toEndOf="@+id/Nombre"
+        app:layout_constraintStart_toStartOf="@+id/Nombre"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:cardBackgroundColor="#e2cbd9"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintTop_toTopOf="@+id/Nicname"
+        app:layout_constraintBottom_toBottomOf="@+id/Nicname"
+        app:layout_constraintEnd_toEndOf="@+id/Nicname"
+        app:layout_constraintStart_toStartOf="@+id/Nicname"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:cardBackgroundColor="#f4d7de"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintTop_toTopOf="@+id/NickName"
+        app:layout_constraintBottom_toBottomOf="@+id/NickName"
+        app:layout_constraintEnd_toEndOf="@+id/NickName"
+        app:layout_constraintStart_toStartOf="@+id/NickName"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:cardBackgroundColor="#a4d4dc "
+        app:cardCornerRadius="100dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ButtonSelectImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/ProfileImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/profile_image"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_foreground" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/Nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="60dp"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:elevation="16dp"
+        android:hint="Nombre"
+        android:textColor="@color/black"
+        android:textSize="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/Nicname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/NickName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:elevation="16dp"
+        android:hint="NickName"
+        android:textColor="@color/black"
+        android:textSize="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ButtonNN"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        app:cardBackgroundColor="#e9a7b8"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintBottom_toBottomOf="@id/ButtonNN"
+        app:layout_constraintEnd_toEndOf="@id/ButtonNN"
+        app:layout_constraintStart_toStartOf="@id/ButtonNN"
+        app:layout_constraintTop_toTopOf="@id/ButtonNN" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/ButtonNN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:background="@android:color/transparent"
+        android:text="Guardar"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        app:cardBackgroundColor="#bfd1d0"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintTop_toTopOf="@+id/ButtonSelectImage"
+        app:layout_constraintBottom_toBottomOf="@+id/ButtonSelectImage"
+        app:layout_constraintEnd_toEndOf="@+id/ButtonSelectImage"
+        app:layout_constraintStart_toStartOf="@+id/ButtonSelectImage"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/ButtonSelectImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="88dp"
+        android:background="@android:color/transparent"
+        android:text="Seleccionar Imagen"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/Nombretext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/Nombretext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="100dp"
+        android:elevation="16dp"
+        android:text="Nombre"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="@+id/Nombre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/Nicname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="100dp"
+        android:elevation="16dp"
+        android:text="NickName"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="@+id/NickName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

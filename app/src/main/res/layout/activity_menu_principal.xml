@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d6eaf8"
+    tools:context="VentanasLMT.MenuPrincipalActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        app:cardBackgroundColor="#f4d7de"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintBottom_toBottomOf="@id/perfil"
+        app:layout_constraintEnd_toEndOf="@id/perfil"
+        app:layout_constraintStart_toStartOf="@id/perfil"
+        app:layout_constraintTop_toTopOf="@id/perfil" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        app:cardBackgroundColor="#f4ceb8"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintBottom_toBottomOf="@id/Juegos"
+        app:layout_constraintEnd_toEndOf="@id/Juegos"
+        app:layout_constraintStart_toStartOf="@id/Juegos"
+        app:layout_constraintTop_toTopOf="@id/Juegos" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        app:cardBackgroundColor="#a4d4dc"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintBottom_toBottomOf="@id/Tablas"
+        app:layout_constraintEnd_toEndOf="@id/Tablas"
+        app:layout_constraintStart_toStartOf="@id/Tablas"
+        app:layout_constraintTop_toTopOf="@id/Tablas" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Juegos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:text="Juegos"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/perfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:text="Perfil"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/Juegos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Tablas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:text="Tablas"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/Juegos" />
+</androidx.constraintlayout.widget.ConstraintLayout>
